@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jlhags/tutorials/lesson_06/polygons"
+	"github.com/jlhags/tutorials/lesson_07/polygons"
 )
 
 func main() {
