@@ -33,6 +33,12 @@ type Game struct {
 	moves []Move
 }
 
+func (g Game) PrintMoves(){
+	for i,m := range(g.moves){
+		fmt.Printf("%d: From %d to %d\n",i+1,m.From,m.To)
+	}
+}
+
 func (g *Game) Start(openSpot int) {
 	for i := 0; i < len(g.board.Holes); i++ {
 		if i == openSpot {
